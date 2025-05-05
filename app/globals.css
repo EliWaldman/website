@@ -23,4 +23,18 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  cursor: none;
+}
+
+* {
+  cursor: none !important;
+}
+
+/* Apply filter only on LinkedIn image hover */
+.linkedin-icon {
+  transition: filter 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.linkedin-icon:hover {
+  filter: invert(27%) sepia(50%) saturate(2500%) hue-rotate(180deg); /* Blue color */
 }
