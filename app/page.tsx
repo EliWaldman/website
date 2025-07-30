@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import MouseEffect from "@/components/MouseEffect";
-import Cube from "@/components/Cube";
+//import Cube from "@/components/Cube";
 
 export default function Home() {
   return (
@@ -10,10 +10,11 @@ export default function Home() {
       <MouseEffect />
 
       {/* Navigation Links */}
-      <nav className=" w-full max-w-2xl flex justify-start space-x-4 pt-6 text-sm font-medium text-gray-500">
+      <nav className="sticky top-0 z-10 w-full max-w-2xl flex justify-start space-x-4 pt-3 pb-2 text-sm font-medium text-gray-500 bg-white">
         <a href="#education" className="hover:text-black transition">Education</a>
         <a href="#work" className="hover:text-black transition">Work Experience</a>
         <a href="#projects" className="hover:text-black transition">Projects</a>
+        <a href="#fun" className="opacity-0 hover:opacity-100 transition-opacity duration-300 hover:text-black">Fun 😮</a>
       </nav>
 
       {/* Header */}
@@ -39,11 +40,11 @@ export default function Home() {
           <div className="flex items-center space-x-2">
             <h1 className="text-4xl font-bold">Eli Waldman</h1>
             <div className="w-12 h-12 overflow-hidden flex items-center justify-center">
-              <Cube />
+              
             </div>
           </div>
 
-          <p className="text-gray-600 text-lg">ewaldman@stanford.edu</p>
+          <p className="text-gray-600 text-lg">ewaldman@cs.stanford.edu</p>
 
           <div className="flex items-center space-x-3 mt-1">
             <a
@@ -72,10 +73,9 @@ export default function Home() {
       <section className="max-w-2xl w-full text-left">
         <h2 className="text-2xl font-semibold mb-2">About Me</h2>
         <p className="text-gray-600">
-          I’m graduating from Stanford with an M.S. in Computer Science and a B.S. in Symbolic Systems. My interests lie in designing and engineering technical solutions that address real-world challenges and seamlessly integrate with user needs. I thrive in collaborative environments and enjoy exploring fields ranging from full stack app development and machine/reinforcement learning to assembly-level OS design.
+          I graduated from Stanford with an M.S. in Computer Science and a B.S. in Symbolic Systems. My interests lie in designing and engineering technical solutions that address real-world challenges and seamlessly integrate with user needs. I thrive in collaborative environments and enjoy exploring fields ranging from full stack app development and machine/reinforcement learning to assembly-level OS design.
         </p>
         <hr className="w-full max-w-2xl border-t border-gray-300 my-2" />
-
       </section>
       
       
@@ -83,71 +83,80 @@ export default function Home() {
       {/* Education */}
       <section id="education" className="max-w-2xl w-full mt-10">
         <h2 className="text-2xl font-semibold mb-2">Education</h2>
-        <p className="font-semibold">Stanford University</p>
-        <p className="text-gray-600">Master of Science, Computer Science (2024 - 2025)</p>
-        <p className="text-gray-600">Bachelor of Science, Symbolic Systems (2020 - 2024)</p>
+        <h3 className="text-xl font-bold text-black mb-1">Stanford University</h3>
+        <p className="text-gray-600 mb-2"> <span className="text-black font-medium">Master of Science, Computer Science</span> <span className="text-gray-500">(2024 - 2025)</span></p>
+        <p className="text-gray-600 mb-2"> <span className="text-black font-medium">Bachelor of Science, Symbolic Systems</span> <span className="text-gray-500">(2020 - 2024)</span></p>
         <hr className="w-full max-w-2xl border-t border-gray-300 my-2" />
-
       </section>
 
       {/* Work Experience */}
       <section id="work" className="max-w-2xl w-full mt-10">
         
       <h2 className="text-2xl font-semibold mb-2">Work Experience</h2>
-        <p className="font-semibold">Stanford Computer Science Department</p>
-        <p className="text-gray-600 mb-1"> <span className="text-black font-semibold">Research Assistant</span> (April 2025 - June 2025)</p>
-        <p className="text-gray-600">Built Bayesian machine learning models using convolutional and variational inference techniques to analyze, reconstruct, and predict heartbeat signals with the goal of improving accuracy in estimating cardiovascular features (mainly blood pressure) from wrist/finger sensors to enable more precise, wearable sensors/monitors.</p>
-        <div className="flex space-x-3 mt-2">
+        {/* Research Assistant */}
+        <div className="mb-8 p-6 bg-gray-50 rounded-lg border border-gray-100">
+          <h3 className="text-xl font-bold text-black mb-1">Stanford Computer Science Department</h3>
+          <p className="text-gray-600 mb-2"> <span className="text-black font-medium">Research Assistant</span> <span className="text-gray-500">(April 2025 - June 2025)</span></p>
+          <p className="text-gray-600">Built Bayesian machine learning models using convolutional and variational inference techniques to analyze, reconstruct, and predict heartbeat signals with the goal of improving accuracy in estimating cardiovascular features (mainly blood pressure) from wrist/finger sensors to enable more precise, wearable sensors/monitors.</p>
+          <div className="flex space-x-3 mt-4">
             <a
               href="https://github.com/EliWaldman/research"
               className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm font-medium hover:bg-gray-300"
             >
               Github
             </a>
+          </div>
+          
+          {/* Work Images */}
+          <div className="flex flex-wrap mt-6">
+            <div className="w-[500px]">
+              <Image
+                src="/heart.png"
+                alt="Heartbeat Signal Analysis"
+                width={500}
+                height={100}
+                className="rounded-md object-contain w-full h-auto shadow-sm"
+              />
+            </div>
+          </div>
         </div>
-                 {/* Top Two Side-by-Side Images */}
-  <div className="flex flex-wrap">
-    <div className="w-[500px]">
-      <Image
-        src="/heart.png" // replace with your file
-        alt="Project screenshot 1"
-        width={500}
-        height={100}
-        className="rounded-md object-contain w-full h-auto"
-      />
-    </div>
-  </div>
 
-
-        <p className="font-semibold mt-5">Stanford Computer Science Department</p>
-        <p className="text-gray-600 mb-1"> <span className="text-black font-semibold">Course Assistant</span> (September 2024 - January 2025)</p>
-        <p className="text-gray-600">I guided the quarter-long app development project for each of my section groups. Assisted in the creation and refinement of assignments and exam questions and communicated group progress to Professor James Landay (co-director of Stanford’s HAI Institute).</p>
-        <div className="flex space-x-3 mt-2">
+        {/* Course Assistant */}
+        <div className="mb-8 p-6 bg-gray-50 rounded-lg border border-gray-100">
+          <h3 className="text-xl font-bold text-black mb-1">Stanford Computer Science Department</h3>
+          <p className="text-gray-600 mb-2"> <span className="text-black font-medium">Course Assistant</span> <span className="text-gray-500">(September 2024 - January 2025)</span></p>
+          <p className="text-gray-600">I guided the quarter-long app development project for each of my section groups. Assisted in the creation and refinement of assignments and exam questions and communicated group progress to Professor James Landay (co-director of Stanford's HAI Institute).</p>
+          <div className="flex space-x-3 mt-4">
             <a
               href="https://hci.stanford.edu/courses/cs147/2024/au/projects.html"
               className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm font-medium hover:bg-gray-300"
             >
-              my students' projects
+              my students&apos; projects
             </a>
+          </div>
         </div>
-        
 
-        <p className="font-semibold mt-6">L'Oréal</p>
-        <p className="text-gray-600 mb-1"> <span className="text-black font-semibold">Digital Product & Optimization Intern</span> (June 2023 - August 2023)</p>
-        <p className="text-gray-600">I developed the first proof-of-concept mobile shopping app and contributed to the creation of innovative eCommerce features for L’Oréal Luxe, such as quick add-to-cart and video modules. I led the design and implementation of new digital tools projected to increase annual brand revenue by $6.5M and was selected to present to upper management and contribute to key technical and CRM decisions. Additionally, I revamped the team's A/B testing statistical calculator, improving its accuracy and driving an estimated $10M in additional annual revenue.</p>
-        <div className="flex space-x-3 mt-2">
+        {/* L'Oréal */}
+        <div className="mb-8 p-6 bg-gray-50 rounded-lg border border-gray-100">
+          <h3 className="text-xl font-bold text-black mb-1">L&apos;Oréal</h3>
+          <p className="text-gray-600 mb-2"> <span className="text-black font-medium">Digital Product & Optimization Intern</span> <span className="text-gray-500">(June 2023 - August 2023)</span></p>
+          <p className="text-gray-600">I developed the first proof-of-concept mobile shopping app and contributed to the creation of innovative eCommerce features for L'Oréal Luxe, such as quick add-to-cart and video modules. I led the design and implementation of new digital tools projected to increase annual brand revenue by $6.5M and was selected to present to upper management and contribute to key technical and CRM decisions. Additionally, I revamped the team&apos;s A/B testing statistical calculator, improving its accuracy and driving an estimated $10M in additional annual revenue.</p>
+          <div className="flex space-x-3 mt-4">
             <a
               href="https://drive.google.com/file/d/1fhhtro-6a1_q06-NEZvRg6d70m2Hml0k/view?usp=sharing"
               className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm font-medium hover:bg-gray-300"
             >
               early app demo
             </a>
+          </div>
         </div>
 
-        <p className="font-semibold mt-6">Stanford Marketing & Consulting Group</p>
-        <p className="text-gray-600 mb-1"> <span className="text-black font-semibold">Consultant</span> (October 2021 - June 2022), <span className="text-black font-semibold">Project Manager</span> (June 2022 - June 2023)</p>
-        <p className="text-gray-600">As Project Manager, I led and mentored over 50 student consultants, running weekly training sessions and managing client deliverables. I taught foundational skills in competitive analysis, consumer behavior, market research, and UX strategy. As a Consultant, I worked on projects for companies like Microsoft Xbox crafting go-to-market strategies for a new cloud gaming product and Firstcard Mastercard where I designed a student ambassador program and app features and pitched to the CEO.</p>
-        <hr className="w-full max-w-2xl border-t border-gray-300 my-2" />
+        {/* Stanford Marketing & Consulting Group */}
+        <div className="mb-8 p-6 bg-gray-50 rounded-lg border border-gray-100">
+          <h3 className="text-xl font-bold text-black mb-1">Stanford Marketing & Consulting Group</h3>
+          <p className="text-gray-600 mb-2"> <span className="text-black font-medium">Consultant</span> <span className="text-gray-500">(October 2021 - June 2022),</span> <span className="text-black font-medium">Project Manager</span> <span className="text-gray-500">(June 2022 - June 2023)</span></p>
+          <p className="text-gray-600">As Project Manager, I led and mentored over 50 student consultants, running weekly training sessions and managing client deliverables. I taught foundational skills in competitive analysis, consumer behavior, market research, and UX strategy. As a Consultant, I worked on projects for companies like Microsoft Xbox crafting go-to-market strategies for a new cloud gaming product and Firstcard Mastercard where I designed a student ambassador program and app features and pitched to the CEO.</p>
+        </div>
 
         
 
@@ -162,12 +171,12 @@ export default function Home() {
 
 
         {/* Project 1 */}
-        <div className="mb-6">
-          <p className="text-gray-600"> <span className="text-black font-semibold">Predicting Nursing Home Admissions from Social Determinants of Health with ML</span></p>
-          <p className="text-gray-600 mb-2"> <span className="text-black font-semibold">Researcher,</span> Stanford Computer Science Department  (Winter, 2024)</p>
+        <div className="mb-8 p-6 bg-gray-50 rounded-lg border border-gray-100">
+          <h3 className="text-xl font-bold text-black mb-1">Predicting Nursing Home Admissions from Social Determinants of Health with ML</h3>
+          <p className="text-gray-600 mb-2"> <span className="text-black font-medium">Researcher,</span> Stanford Computer Science Department  <span className="text-gray-500">(Winter, 2024)</span></p>
 
           <p className="text-gray-600">Applied advanced ML models, including TabNet, XGBoost, and neural networks, to predict nursing home admissions using high-dimensional data from the Health and Retirement Study (HRS). Achieved state-of-the-art performance with TabNet (F1: 0.6285, AUC: 0.8905), outperforming traditional literature benchmarks. Tackled challenges such as class imbalance and categorical feature sparsity through model selection and optimization. Results highlight the potential of attention-based architectures for real-world healthcare prediction tasks.</p>
-          <div className="flex space-x-3 mt-2">
+          <div className="flex space-x-3 mt-4">
             <a
               href="https://github.com/EliWaldman/CS229_Project"
               className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm font-medium hover:bg-gray-300"
@@ -181,88 +190,85 @@ export default function Home() {
               Paper
             </a>
           </div>
-        </div>  
-            
-            {/* Top Two Side-by-Side Images */}
-  <div className="flex flex-wrap gap-4 mt-6 mb-6">
-    <div className="flex-1 min-w-[30%]">
-      <Image
-        src="/ml_confusion.png" // replace with your file
-        alt="Project screenshot 1"
-        width={800}
-        height={500}
-        className="rounded-md object-cover w-full"
-      />
-    </div>
-    <div className="flex-1 min-w-[30%]">
-      <Image
-        src="/ml_auc.png"
-        alt="Project screenshot 2"
-        width={800}
-        height={500}
-        className="rounded-md object-cover w-full"
-      />
-    </div>
-  </div>
+          
+          {/* Project Images */}
+          <div className="flex flex-wrap gap-4 mt-6">
+            <div className="flex-1 min-w-[30%]">
+              <Image
+                src="/ml_confusion.png"
+                alt="ML Confusion Matrix"
+                width={800}
+                height={500}
+                className="rounded-md object-cover w-full shadow-sm"
+              />
+            </div>
+            <div className="flex-1 min-w-[30%]">
+              <Image
+                src="/ml_auc.png"
+                alt="ML AUC Results"
+                width={800}
+                height={500}
+                className="rounded-md object-cover w-full shadow-sm"
+              />
+            </div>
+          </div>
+        </div>
 
 
 
         {/* Project 2 */}
+        <div className="mb-8 p-6 bg-gray-50 rounded-lg border border-gray-100">
+          <h3 className="text-xl font-bold text-black mb-1">Reinforcement Learning: The Influence of Teacher Reliability on Finding Optimal Paths</h3>
+          <p className="text-gray-600 mb-2"> <span className="text-black font-medium">Researcher,</span> Stanford Computer Science Department  <span className="text-gray-500">(Spring, 2024)</span></p>
+          <p className="text-gray-600 mt-2">Studied how the timing and reliability of parental guidance affect learning in student-teacher reinforcement learning agents. Trained an optimal parent agent and then varied its reliability from 0% to 100% by adjusting its policy. Child agents were trained under pre-advice (seeks help only when uncertain) and post-advice (constantly influenced by the parent) strategies. Found that pre-advice agents were more resilient to poor guidance and learned optimal policies more efficiently, while post-advice agents were more vulnerable to unreliable input. Results emphasize the importance of selective guidance and balanced exploration in effective learning for AI agents and humans.</p>
 
-{/* Project 2 */}
-<div className="mb-6">
-  <p className="text-gray-600"> <span className="text-black font-semibold">Reinforcement Learning: The Influence of Teacher Reliability on Finding Optimal Paths</span></p>
-  <p className="text-gray-600"> <span className="text-black font-semibold">Researcher,</span> Stanford Computer Science Department  (Spring, 2024)</p>
-  <p className="text-gray-600 mt-2">Studied how the timing and reliability of parental guidance affect learning in student-teacher reinforcement learning agents. Trained an optimal parent agent and then varied its reliability from 0% to 100% by adjusting its policy. Child agents were trained under pre-advice (seeks help only when uncertain) and post-advice (constantly influenced by the parent) strategies. Found that pre-advice agents were more resilient to poor guidance and learned optimal policies more efficiently, while post-advice agents were more vulnerable to unreliable input. Results emphasize the importance of selective guidance and balanced exploration in effective learning for AI agents and humans.</p>
-
-    {/* Buttons */}
-    <div className="flex space-x-3 mt-4">
-    <a
-      href="https://github.com/samkwok1/Student-Teacher-RL"
-      className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm font-medium hover:bg-gray-300"
-    >
-      GitHub
-    </a>
-    <a
-      href="https://drive.google.com/file/d/1Ctb-94EcnNC-1FWmn2lF0ZVtDCSVgpzB/view"
-      className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm font-medium hover:bg-gray-300"
-    >
-      Paper
-    </a>
-  </div>
-  {/* Top Two Side-by-Side Images */}
-  <div className="flex flex-wrap gap-4 mt-6 mb-6">
-    <div className="flex-1 min-w-[48.5%]">
-      <Image
-        src="/rl_graph.png" // replace with your file
-        alt="Project screenshot 1"
-        width={900}
-        height={550}
-        className="rounded-md object-cover w-full h-auto"
-      />
-    </div>
-    <div className="flex-1 min-w-[49%]">
-      <Image
-        src="/rl_maze.png"
-        alt="Project screenshot 2"
-        width={900}
-        height={550}
-        className="rounded-md object-cover w-full h-auto"
-      />
-    </div>
-  </div>
-
-
-</div>
+          {/* Buttons */}
+          <div className="flex space-x-3 mt-4">
+            <a
+              href="https://github.com/samkwok1/Student-Teacher-RL"
+              className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm font-medium hover:bg-gray-300"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://drive.google.com/file/d/1Ctb-94EcnNC-1FWmn2lF0ZVtDCSVgpzB/view"
+              className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm font-medium hover:bg-gray-300"
+            >
+              Paper
+            </a>
+          </div>
+          
+          {/* Project Images */}
+          <div className="flex flex-wrap gap-4 mt-6">
+            <div className="flex-1 min-w-[48.5%]">
+              <Image
+                src="/rl_graph.png"
+                alt="RL Performance Graph"
+                width={900}
+                height={550}
+                className="rounded-md object-cover w-full h-auto shadow-sm"
+              />
+            </div>
+            <div className="flex-1 min-w-[49%]">
+              <Image
+                src="/rl_maze.png"
+                alt="RL Maze Environment"
+                width={900}
+                height={550}
+                className="rounded-md object-cover w-full h-auto shadow-sm"
+              />
+            </div>
+          </div>
+        </div>
 
         {/* Project 3 */}
-        <div className="mb-6">
-          <p className="text-gray-600"> <span className="text-black font-semibold">daha</span></p>
-          <p className="text-gray-600 mb-2"> <span className="text-black font-semibold">Co-Founder, Designer, Developer,</span> (September 2022 - September 2024)</p>
+        <div className="mb-8 p-6 bg-gray-50 rounded-lg border border-gray-100">
+          <h3 className="text-xl font-bold text-black mb-1">daha</h3>
+          <p className="text-gray-600 mb-2"> <span className="text-black font-medium">Co-Founder, Designer, Developer,</span> <span className="text-gray-500">(September 2022 - September 2024)</span></p>
 
           <p className="text-gray-600">Created a peer-to-peer lending platform designed to make it easier for college students to borrow and share everyday items within their campus community. Built from the ground up, the idea for daha emerged from early user/needfinding interviews where we looked to uncover real pain points in student access to temporary-use items. We progressed through every stage of the design process, including paper prototyping, low and high (Figma) fidelity mockups, heuristic evaluations, usability testing, and dozens of user interviews.</p>
           <p className="text-gray-600 mt-3">The final app, built using React Native and Supabase, was designed to allow users to reach their network with a single post, streamlining the borrowing process and encouraging sustainable habits. We received the TomKat Energy Catalyst Grant from Stanford to support further development and launch the platform at Stanford and other universities.</p>
-          <div className="flex space-x-3 mt-2">
+          <div className="flex space-x-3 mt-4">
             <a
               href="https://docs.google.com/document/d/1JWmXln983iYPZgzQ_IYvtJGmzZGRTRt-FPS-iKJXpSs/edit?tab=t.0"
               className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm font-medium hover:bg-gray-300"
@@ -282,30 +288,135 @@ export default function Home() {
               Demo Video 2
             </a>
           </div>
-        </div>  
-            
-            {/* Top Two Side-by-Side Images */}
-  <div className="flex flex-wrap gap-4 mt-6 mb-6">
-    <div className="flex-1 min-w-[10%]">
-      <Image
-        src="/lowfi.png" // replace with your file
-        alt="Project screenshot 1"
-        width={400}
-        height={100}
-        className="rounded-md object-contain w-128 h-128"
-      />
-    </div>
-    <div className="flex-1 min-w-[33%]">
-      <Image
-        src="/hifi.png"
-        alt="Project screenshot 2"
-        width={800}
-        height={500}
-        className="rounded-md object-contain w-128 h-128"
-      />
-    </div>
-  </div>
+          
+          {/* Project Images */}
+          <div className="flex flex-wrap gap-4 mt-6">
+            <div className="flex-1 min-w-[10%]">
+              <Image
+                src="/lowfi.png"
+                alt="daha Low Fidelity Mockup"
+                width={400}
+                height={100}
+                className="rounded-lg object-contain w-128 h-128"
+                style={{ borderRadius: '8px' }}
+              />
+            </div>
+            <div className="flex-1 min-w-[33%]">
+              <Image
+                src="/hifi.png"
+                alt="daha High Fidelity Mockup"
+                width={800}
+                height={500}
+                className="rounded-lg object-contain w-128 h-128"
+                style={{ borderRadius: '8px' }}
+              />
+            </div>
+          </div>
+        </div>
 
+      </section>
+
+      {/* Fun */}
+      <section id="fun" className="max-w-2xl w-full mt-10">
+        <h2 className="text-2xl font-semibold mb-2">Passion Projects</h2>
+        <div className="mb-8 p-6 bg-gray-50 rounded-lg border border-gray-100">
+          <h3 className="text-xl font-bold text-black mb-1">RunItBack</h3>
+          <p className="text-gray-600 mb-2"> <span className="text-black font-medium">Developer & Designer</span> <span className="text-gray-500">(April 2025 - June 2025)</span></p>
+          <p className="text-gray-600">Designed and built a web platform to connect Stanford students interested in pick-up sports. Contributed to frontend and backend development for a web app that allowed users to create accounts with their Stanford email, RSVP to events, and engage in game-specific group chats. Developed personalized user profiles to track favorite sports, locations, and skill levels, fostering stronger in-person sports communities. Conducted user testing and iterative design based on engagement data, ultimately achieving strong user adoption of core features like RSVP and event creation, while implementing basic moderation tools in response to early community use patterns.</p>
+          <div className="flex space-x-3 mt-4">
+            <a
+              href="https://run-it-back-dusky.vercel.app/login"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm font-medium hover:bg-gray-300"
+            >
+              Try it out here
+            </a>
+            <a
+              href="https://drive.google.com/file/d/1zKHZRYncG8CLA-Wn75BAEq_1OYH694Dr/view"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm font-medium hover:bg-gray-300"
+            >
+              Demo Video
+            </a>
+          </div>
+        </div>
+
+        {/* Outdoor Deck */}
+        <div className="mb-8 p-6 bg-gray-50 rounded-lg border border-gray-100">
+          <h3 className="text-xl font-bold text-black mb-1">Outdoor Deck</h3>
+          <p className="text-gray-600 mb-2"> <span className="text-black font-medium">Builder & Designer</span> <span className="text-gray-500">(Spring 2024)</span></p>
+          <p className="text-gray-600">Designed and constructed an outdoor deck for my dorm, featuring an integrated sand pit. This project involved precise woodworking and structural planning to create a functional and aesthetically pleasing communal space. </p>
+          
+          {/* Project Image */}
+          <div className="mt-6">
+            <Image
+              src="/outdoor-deck.jpeg"
+              alt="Outdoor deck with sand pit"
+              width={600}
+              height={400}
+              className="rounded-lg object-contain w-full h-auto"
+              style={{ borderRadius: '8px' }}
+            />
+            <p className="text-sm text-gray-500 mt-2 italic">Work in progress photo</p>
+          </div>
+        </div>
+
+        {/* Bay to Breakers Float */}
+        <div className="mb-8 p-6 bg-gray-50 rounded-lg border border-gray-100">
+          <h3 className="text-xl font-bold text-black mb-1">Bay to Breakers Float</h3>
+          <p className="text-gray-600 mb-2"> <span className="text-black font-medium">Builder & Designer</span> <span className="text-gray-500">(Spring 2024)</span></p>
+          <p className="text-gray-600">Designed and built a Fortnite-inspired float for Stanford's annual involvement in the Bay to Breakers SF race. This project involved 50+ hours of creative design planning and hands-on construction.</p>
+          
+          {/* Project Images */}
+          <div className="grid grid-cols-2 gap-4 mt-6">
+            <div className="w-full">
+              <Image
+                src="/bay-to-breakers-1.jpeg"
+                alt="Bay to Breakers Float - Image 1"
+                width={600}
+                height={400}
+                className="rounded-lg object-contain w-full h-auto"
+                style={{ borderRadius: '8px' }}
+              />
+              <p className="text-sm text-gray-500 mt-2 italic">Digital design</p>
+            </div>
+            <div className="w-full">
+              <Image
+                src="/bay-to-breakers-2.jpeg"
+                alt="Bay to Breakers Float - Image 2"
+                width={600}
+                height={400}
+                className="rounded-lg object-contain w-full h-auto"
+                style={{ borderRadius: '8px' }}
+              />
+              <p className="text-sm text-gray-500 mt-2 italic">Physical frame</p>
+            </div>
+            <div className="w-full">
+              <Image
+                src="/bay-to-breakers-3.jpeg"
+                alt="Bay to Breakers Float - Image 3"
+                width={600}
+                height={400}
+                className="rounded-lg object-contain w-full h-auto"
+                style={{ borderRadius: '8px' }}
+              />
+              <p className="text-sm text-gray-500 mt-2 italic">Hard shell and paint</p>
+            </div>
+            <div className="w-full">
+              <Image
+                src="/bay-to-breakers-4.jpeg"
+                alt="Bay to Breakers Float - Image 4"
+                width={600}
+                height={400}
+                className="rounded-lg object-contain w-full h-auto"
+                style={{ borderRadius: '8px' }}
+              />
+              <p className="text-sm text-gray-500 mt-2 italic">Enjoying the race!</p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   );

@@ -51,7 +51,7 @@ export default function MouseEffect() {
     <div className="pointer-events-none fixed inset-0 z-50">
       {/* Always visible main cursor dot */}
       <div
-        className="absolute w-4 h-4 rounded-full"
+        className="absolute w-3 h-3 rounded-full"
         style={{
           left: mousePos.x,
           top: mousePos.y,
@@ -64,7 +64,7 @@ export default function MouseEffect() {
       {positions.map((pos, index) => (
         <div
           key={index}
-          className="absolute w-3 h-3 rounded-full"
+          className="absolute w-2 h-2 rounded-full"
           style={{
             left: pos.x,
             top: pos.y,
