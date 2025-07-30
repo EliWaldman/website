@@ -52,9 +52,11 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
-                src="linkedin.svg"
+              <Image
+                src="/linkedin.svg"
                 alt="LinkedIn"
+                width={24}
+                height={24}
                 className="w-6 h-6 linkedin-icon"
               />
             </a>
@@ -125,7 +127,7 @@ export default function Home() {
         <div className="mb-8 p-6 bg-gray-50 rounded-lg border border-gray-100">
           <h3 className="text-xl font-bold text-black mb-1">Stanford Computer Science Department</h3>
           <p className="text-gray-600 mb-2"> <span className="text-black font-medium">Course Assistant</span> <span className="text-gray-500">(September 2024 - January 2025)</span></p>
-          <p className="text-gray-600">I guided the quarter-long app development project for each of my section groups. Assisted in the creation and refinement of assignments and exam questions and communicated group progress to Professor James Landay (co-director of Stanford's HAI Institute).</p>
+          <p className="text-gray-600">I guided the quarter-long app development project for each of my section groups. Assisted in the creation and refinement of assignments and exam questions and communicated group progress to Professor James Landay (co-director of Stanford&apos;s HAI Institute).</p>
           <div className="flex space-x-3 mt-4">
             <a
               href="https://hci.stanford.edu/courses/cs147/2024/au/projects.html"
@@ -140,7 +142,7 @@ export default function Home() {
         <div className="mb-8 p-6 bg-gray-50 rounded-lg border border-gray-100">
           <h3 className="text-xl font-bold text-black mb-1">L&apos;Oréal</h3>
           <p className="text-gray-600 mb-2"> <span className="text-black font-medium">Digital Product & Optimization Intern</span> <span className="text-gray-500">(June 2023 - August 2023)</span></p>
-          <p className="text-gray-600">I developed the first proof-of-concept mobile shopping app and contributed to the creation of innovative eCommerce features for L'Oréal Luxe, such as quick add-to-cart and video modules. I led the design and implementation of new digital tools projected to increase annual brand revenue by $6.5M and was selected to present to upper management and contribute to key technical and CRM decisions. Additionally, I revamped the team&apos;s A/B testing statistical calculator, improving its accuracy and driving an estimated $10M in additional annual revenue.</p>
+          <p className="text-gray-600">I developed the first proof-of-concept mobile shopping app and contributed to the creation of innovative eCommerce features for L&apos;Oréal Luxe, such as quick add-to-cart and video modules. I led the design and implementation of new digital tools projected to increase annual brand revenue by $6.5M and was selected to present to upper management and contribute to key technical and CRM decisions. Additionally, I revamped the team&apos;s A/B testing statistical calculator, improving its accuracy and driving an estimated $10M in additional annual revenue.</p>
           <div className="flex space-x-3 mt-4">
             <a
               href="https://drive.google.com/file/d/1fhhtro-6a1_q06-NEZvRg6d70m2Hml0k/view?usp=sharing"
@@ -367,7 +369,7 @@ export default function Home() {
         <div className="mb-8 p-6 bg-gray-50 rounded-lg border border-gray-100">
           <h3 className="text-xl font-bold text-black mb-1">Bay to Breakers Float</h3>
           <p className="text-gray-600 mb-2"> <span className="text-black font-medium">Builder & Designer</span> <span className="text-gray-500">(Spring 2024)</span></p>
-          <p className="text-gray-600">Designed and built a Fortnite-inspired float for Stanford's annual involvement in the Bay to Breakers SF race. This project involved 50+ hours of creative design planning and hands-on construction.</p>
+          <p className="text-gray-600">Designed and built a Fortnite-inspired float for Stanford&apos;s annual involvement in the Bay to Breakers SF race. This project involved 50+ hours of creative design planning and hands-on construction.</p>
           
           {/* Project Images */}
           <div className="grid grid-cols-2 gap-4 mt-6">
