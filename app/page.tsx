@@ -22,7 +22,7 @@ export default function Home() {
         {/* Profile Image */}
         <div className="w-36 h-36 md:w-40 md:h-40 rounded-full overflow-hidden">
           <Image
-            src="/EliWaldman_copy.png"
+            src="EliWaldman_copy.png"
             alt="Eli Waldman"
             width={250}
             height={250}
@@ -53,7 +53,7 @@ export default function Home() {
               rel="noopener noreferrer"
             >
               <Image
-                src="/linkedin.svg"
+                src="linkedin.svg"
                 alt="LinkedIn"
                 width={24}
                 height={24}
@@ -113,7 +113,7 @@ export default function Home() {
           <div className="flex flex-wrap mt-6">
             <div className="w-[500px]">
               <Image
-                src="/heart.png"
+                src="heart.png"
                 alt="Heartbeat Signal Analysis"
                 width={500}
                 height={100}
@@ -197,7 +197,7 @@ export default function Home() {
           <div className="flex flex-wrap gap-4 mt-6">
             <div className="flex-1 min-w-[30%]">
               <Image
-                src="/ml_confusion.png"
+                src="ml_confusion.png"
                 alt="ML Confusion Matrix"
                 width={800}
                 height={500}
@@ -206,7 +206,7 @@ export default function Home() {
             </div>
             <div className="flex-1 min-w-[30%]">
               <Image
-                src="/ml_auc.png"
+                src="ml_auc.png"
                 alt="ML AUC Results"
                 width={800}
                 height={500}
@@ -244,7 +244,7 @@ export default function Home() {
           <div className="flex flex-wrap gap-4 mt-6">
             <div className="flex-1 min-w-[48.5%]">
               <Image
-                src="/rl_graph.png"
+                src="rl_graph.png"
                 alt="RL Performance Graph"
                 width={900}
                 height={550}
@@ -253,7 +253,7 @@ export default function Home() {
             </div>
             <div className="flex-1 min-w-[49%]">
               <Image
-                src="/rl_maze.png"
+                src="rl_maze.png"
                 alt="RL Maze Environment"
                 width={900}
                 height={550}
@@ -295,7 +295,7 @@ export default function Home() {
           <div className="flex flex-wrap gap-4 mt-6">
             <div className="flex-1 min-w-[10%]">
               <Image
-                src="/lowfi.png"
+                src="lowfi.png"
                 alt="daha Low Fidelity Mockup"
                 width={400}
                 height={100}
@@ -305,7 +305,7 @@ export default function Home() {
             </div>
             <div className="flex-1 min-w-[33%]">
               <Image
-                src="/hifi.png"
+                src="hifi.png"
                 alt="daha High Fidelity Mockup"
                 width={800}
                 height={500}
@@ -354,7 +354,7 @@ export default function Home() {
           {/* Project Image */}
           <div className="mt-6">
             <Image
-              src="/outdoor-deck.jpeg"
+                              src="outdoor-deck.jpeg"
               alt="Outdoor deck with sand pit"
               width={600}
               height={400}
@@ -375,7 +375,7 @@ export default function Home() {
           <div className="grid grid-cols-2 gap-4 mt-6">
             <div className="w-full">
               <Image
-                src="/bay-to-breakers-1.jpeg"
+                src="bay-to-breakers-1.jpeg"
                 alt="Bay to Breakers Float - Image 1"
                 width={600}
                 height={400}
@@ -386,7 +386,7 @@ export default function Home() {
             </div>
             <div className="w-full">
               <Image
-                src="/bay-to-breakers-2.jpeg"
+                src="bay-to-breakers-2.jpeg"
                 alt="Bay to Breakers Float - Image 2"
                 width={600}
                 height={400}
@@ -397,7 +397,7 @@ export default function Home() {
             </div>
             <div className="w-full">
               <Image
-                src="/bay-to-breakers-3.jpeg"
+                src="bay-to-breakers-3.jpeg"
                 alt="Bay to Breakers Float - Image 3"
                 width={600}
                 height={400}
@@ -408,7 +408,7 @@ export default function Home() {
             </div>
             <div className="w-full">
               <Image
-                src="/bay-to-breakers-4.jpeg"
+                src="bay-to-breakers-4.jpeg"
                 alt="Bay to Breakers Float - Image 4"
                 width={600}
                 height={400}
