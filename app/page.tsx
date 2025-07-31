@@ -14,7 +14,7 @@ export default function Home() {
         <a href="#education" className="hover:text-black transition">Education</a>
         <a href="#work" className="hover:text-black transition">Work Experience</a>
         <a href="#projects" className="hover:text-black transition">Projects</a>
-        <a href="#fun" className="opacity-0 hover:opacity-100 transition-opacity duration-300 hover:text-black">Fun 😮</a>
+        <a href="#fun" className="hover:text-black transition group"><span className="group-hover:bg-gradient-to-r group-hover:from-red-500 group-hover:via-yellow-500 group-hover:via-green-500 group-hover:via-blue-500 group-hover:to-purple-500 group-hover:bg-clip-text group-hover:text-transparent">Fun</span><span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300"> 😮</span></a>
       </nav>
 
       {/* Header */}
@@ -61,7 +61,7 @@ export default function Home() {
               />
             </a>
             <a
-              href="https://docs.google.com/document/d/1Ug6KwMHQxt9dU3AR3UgFRGsKKq7laOFqeOO_7klpIU8/edit?usp=sharing"
+              href="https://docs.google.com/document/d/1c087dcHENM_hW8Jk5sex44G9u7HlxmcYmL3OIdhj6x4/edit?usp=sharing"
               target="_blank"
               className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm font-medium hover:bg-gray-300"
             >
@@ -74,8 +74,11 @@ export default function Home() {
       {/* About Me */}
       <section className="max-w-2xl w-full text-left">
         <h2 className="text-2xl font-semibold mb-2">About Me</h2>
+        <p className="text-gray-600 mb-4">
+          I'm a storyteller, tinkerer, and computer scientist. I arrived at college with a camera in hand, eager to keep pursuing what I loved most: documentary filmmaking. My first computer science classes at Stanford showed me that code, data, design, and even math could uncover and express people’s stories in ways a camera never could. That realization led me from film to a B.S. in Symbolic Systems and ultimately to a Master's in Computer Science, where I developed deep technical skills, immersing myself in ML, algorithms, and human-centered AI research while also learning to convey complex technical concepts to both technical and non-technical audiences.
+        </p>
         <p className="text-gray-600">
-          I graduated from Stanford with an M.S. in Computer Science and a B.S. in Symbolic Systems. My interests lie in designing and engineering technical solutions that address real-world challenges and seamlessly integrate with user needs. I thrive in collaborative environments and enjoy exploring fields ranging from full stack app development and machine/reinforcement learning to assembly-level OS design.
+          My work centers on blending that technical depth with business and design thinking: not just building tools with a clear, user-centered purpose, but creating technology that feels natural and impactful for the people who use it.
         </p>
         <hr className="w-full max-w-2xl border-t border-gray-300 my-2" />
       </section>
@@ -105,7 +108,7 @@ export default function Home() {
               href="https://github.com/EliWaldman/research"
               className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm font-medium hover:bg-gray-300"
             >
-              Github
+              GitHub
             </a>
           </div>
           
@@ -145,7 +148,7 @@ export default function Home() {
           <p className="text-gray-600">I developed the first proof-of-concept mobile shopping app and contributed to the creation of innovative eCommerce features for L&apos;Oréal Luxe, such as quick add-to-cart and video modules. I led the design and implementation of new digital tools projected to increase annual brand revenue by $6.5M and was selected to present to upper management and contribute to key technical and CRM decisions. Additionally, I revamped the team&apos;s A/B testing statistical calculator, improving its accuracy and driving an estimated $10M in additional annual revenue.</p>
           <div className="flex space-x-3 mt-4">
             <a
-              href="https://drive.google.com/file/d/1fhhtro-6a1_q06-NEZvRg6d70m2Hml0k/view?usp=sharing"
+              href="https://drive.google.com/file/d/1ijL_jojNHfWWcgstwFYgREK89YFbc8rD/view?usp=sharing"
               className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm font-medium hover:bg-gray-300"
             >
               early app demo
@@ -186,7 +189,7 @@ export default function Home() {
               GitHub
             </a>
             <a
-              href="https://drive.google.com/file/d/17eohDb2vwRljsubjeVDefHojeq0umTtW/view"
+              href="https://drive.google.com/file/d/1qoZcMfQJ8oFRD1qomw2mBpSbXswgJnoS/view?usp=sharing"
               className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm font-medium hover:bg-gray-300"
             >
               Paper
@@ -233,7 +236,7 @@ export default function Home() {
               GitHub
             </a>
             <a
-              href="https://drive.google.com/file/d/1Ctb-94EcnNC-1FWmn2lF0ZVtDCSVgpzB/view"
+              href="https://drive.google.com/file/d/1NHs0FM2BGW_VmdtkQP0UlzA2ffCNrnqP/view?usp=sharing"
               className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm font-medium hover:bg-gray-300"
             >
               Paper
@@ -272,7 +275,7 @@ export default function Home() {
           <p className="text-gray-600 mt-3">The final app, built using React Native and Supabase, was designed to allow users to reach their network with a single post, streamlining the borrowing process and encouraging sustainable habits. We received the TomKat Energy Catalyst Grant from Stanford to support further development and launch the platform at Stanford and other universities.</p>
           <div className="flex space-x-3 mt-4">
             <a
-              href="https://docs.google.com/document/d/1JWmXln983iYPZgzQ_IYvtJGmzZGRTRt-FPS-iKJXpSs/edit?tab=t.0"
+              href="https://docs.google.com/document/d/1_qPWHnxo2ePEffVxj8ytdO5syXU3CLzxLB61XFxQEg8/edit?usp=sharing"
               className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm font-medium hover:bg-gray-300"
             >
               Documentation
@@ -284,7 +287,7 @@ export default function Home() {
               Demo Video 1
             </a>
             <a
-              href="https://drive.google.com/file/d/1z-HHp-GYcpZn0zhoNtUUfdNEw4gsaZ0a/view"
+              href="https://drive.google.com/file/d/1gyfcvUx7uzwdBf9Q2VGwMLN8QqTV0ZWj/view?usp=sharing"
               className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm font-medium hover:bg-gray-300"
             >
               Demo Video 2
@@ -335,7 +338,7 @@ export default function Home() {
               Try it out here
             </a>
             <a
-              href="https://drive.google.com/file/d/1zKHZRYncG8CLA-Wn75BAEq_1OYH694Dr/view"
+              href="https://drive.google.com/file/d/1hMtI6J7dXohf-ZzMrkG75beADuYsAxiM/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm font-medium hover:bg-gray-300"
@@ -417,6 +420,35 @@ export default function Home() {
               />
               <p className="text-sm text-gray-500 mt-2 italic">Enjoying the race!</p>
             </div>
+          </div>
+        </div>
+
+        {/* Spiritwood */}
+        <div className="mb-8 p-6 bg-gray-50 rounded-lg border border-gray-100">
+          <h3 className="text-xl font-bold text-black mb-1">Spiritwood</h3>
+          <p className="text-gray-600 mb-2"> <span className="text-black font-medium">Designer and Engineer</span> <span className="text-gray-500">(2023)</span></p>
+          <p className="text-gray-600">Designed and engineered an adventure game set in an enchanted forest where players navigate a world of corrupted animals and mystical powers. Created level design with interconnected forest environments, designed character mechanics, and implemented core gameplay systems, including puzzle-solving elements.</p>
+          <div className="flex space-x-3 mt-4">
+            <a
+              href="https://drubanight.itch.io/spiritwood"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm font-medium hover:bg-gray-300"
+            >
+              Click here to play
+            </a>
+          </div>
+          
+          {/* Project Image */}
+          <div className="mt-6">
+            <Image
+              src="spiritwood-gameplay.png"
+              alt="Spiritwood gameplay screenshot"
+              width={600}
+              height={400}
+              className="rounded-lg object-contain w-full h-auto"
+              style={{ borderRadius: '8px' }}
+            />
           </div>
         </div>
       </section>
