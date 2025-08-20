@@ -77,8 +77,11 @@ export default function Home() {
         <p className="text-gray-600 mb-4">
           I&apos;m a storyteller, tinkerer, and computer scientist. I arrived at college with a camera in hand, eager to keep pursuing what I loved most: documentary filmmaking. My first computer science classes at Stanford showed me that code, data, design, and even math could uncover and express people’s stories in ways a camera never could. That realization led me from film to a B.S. in Symbolic Systems and ultimately to a Master&apos;s in Computer Science, where I developed deep technical skills, immersing myself in ML, algorithms, and human-centered AI research while also learning to convey complex technical concepts to both technical and non-technical audiences.
         </p>
+        <p className="text-gray-600 mb-4">
+          I currently work at Bayview Asset Management in NYC as a founding member of their Enterprise AI team. I work across the firm to uncover high-leverage use cases and develop and deliver internal AI solutions (hardware and software) that make trading, investing, and operations faster, clearer, and more reliable.
+        </p>
         <p className="text-gray-600">
-          My work centers on blending that technical depth with business and design thinking: not just building tools with a clear, user-centered purpose, but creating technology that feels natural and impactful for the people who use it.
+          My work centers on blending technical depth with business and design thinking: not just building tools with a clear, user-centered purpose, but creating technology that feels natural and impactful for the people who use it.
         </p>
         <hr className="w-full max-w-2xl border-t border-gray-300 my-2" />
       </section>
@@ -98,10 +101,16 @@ export default function Home() {
       <section id="work" className="max-w-2xl w-full mt-10">
         
       <h2 className="text-2xl font-semibold mb-2">Work Experience</h2>
+        {/* Bayview Asset Management */}
+        <div className="mb-8 p-6 bg-gray-50 rounded-lg border border-gray-100">
+          <h3 className="text-xl font-bold text-black mb-1">Bayview Asset Management</h3>
+          <p className="text-gray-600 mb-2"> <span className="text-black font-medium">AI Analyst</span> <span className="text-gray-500">(September 2025 - Present)</span> <span className="text-gray-500"> • New York City, NY</span></p>
+          <p className="text-gray-600">Founding member of Bayview’s Enterprise AI team created in Summer 2025. Work across the entire commpany to identify high‑impact pain points and build internal AI solutions to streamline workflows and improve decision speed and quality. Develop and fine‑tune internal models for Bayview‑specific use cases, stand up the supporting infrastructure, and deliver end‑to‑end solutions: from problem discovery and prototype to production rollout.</p>
+        </div>
         {/* Research Assistant */}
         <div className="mb-8 p-6 bg-gray-50 rounded-lg border border-gray-100">
           <h3 className="text-xl font-bold text-black mb-1">Stanford Computer Science Department</h3>
-          <p className="text-gray-600 mb-2"> <span className="text-black font-medium">Research Assistant</span> <span className="text-gray-500">(April 2025 - June 2025)</span></p>
+          <p className="text-gray-600 mb-2"> <span className="text-black font-medium">Research Assistant</span> <span className="text-gray-500">(April 2025 - June 2025)</span> <span className="text-gray-500"> • Stanford, CA</span></p>
           <p className="text-gray-600">Built Bayesian machine learning models using convolutional and variational inference techniques to analyze, reconstruct, and predict heartbeat signals with the goal of improving accuracy in estimating cardiovascular features (mainly blood pressure) from wrist/finger sensors to enable more precise, wearable sensors/monitors.</p>
           <div className="flex space-x-3 mt-4">
             <a
@@ -129,7 +138,7 @@ export default function Home() {
         {/* Course Assistant */}
         <div className="mb-8 p-6 bg-gray-50 rounded-lg border border-gray-100">
           <h3 className="text-xl font-bold text-black mb-1">Stanford Computer Science Department</h3>
-          <p className="text-gray-600 mb-2"> <span className="text-black font-medium">Course Assistant</span> <span className="text-gray-500">(September 2024 - January 2025)</span></p>
+          <p className="text-gray-600 mb-2"> <span className="text-black font-medium">Course Assistant</span> <span className="text-gray-500">(September 2024 - January 2025)</span> <span className="text-gray-500"> • Stanford, CA</span></p>
           <p className="text-gray-600">I guided the quarter-long app development project for each of my section groups. Assisted in the creation and refinement of assignments and exam questions and communicated group progress to Professor James Landay (co-director of Stanford&apos;s HAI Institute).</p>
           <div className="flex space-x-3 mt-4">
             <a
@@ -144,7 +153,7 @@ export default function Home() {
         {/* L'Oréal */}
         <div className="mb-8 p-6 bg-gray-50 rounded-lg border border-gray-100">
           <h3 className="text-xl font-bold text-black mb-1">L&apos;Oréal</h3>
-          <p className="text-gray-600 mb-2"> <span className="text-black font-medium">Digital Product & Optimization Intern</span> <span className="text-gray-500">(June 2023 - August 2023)</span></p>
+          <p className="text-gray-600 mb-2"> <span className="text-black font-medium">Digital Product & Optimization Intern</span> <span className="text-gray-500">(June 2023 - August 2023)</span> <span className="text-gray-500"> • New York City, NY</span></p>
           <p className="text-gray-600">I developed the first proof-of-concept mobile shopping app and contributed to the creation of innovative eCommerce features for L&apos;Oréal Luxe, such as quick add-to-cart and video modules. I led the design and implementation of new digital tools projected to increase annual brand revenue by $6.5M and was selected to present to upper management and contribute to key technical and CRM decisions. Additionally, I revamped the team&apos;s A/B testing statistical calculator, improving its accuracy and driving an estimated $10M in additional annual revenue.</p>
           <div className="flex space-x-3 mt-4">
             <a
@@ -159,7 +168,7 @@ export default function Home() {
         {/* Stanford Marketing & Consulting Group */}
         <div className="mb-8 p-6 bg-gray-50 rounded-lg border border-gray-100">
           <h3 className="text-xl font-bold text-black mb-1">Stanford Marketing & Consulting Group</h3>
-          <p className="text-gray-600 mb-2"> <span className="text-black font-medium">Consultant</span> <span className="text-gray-500">(October 2021 - June 2022),</span> <span className="text-black font-medium">Project Manager</span> <span className="text-gray-500">(June 2022 - June 2023)</span></p>
+          <p className="text-gray-600 mb-2"> <span className="text-black font-medium">Consultant</span> <span className="text-gray-500">(October 2021 - June 2022),</span> <span className="text-black font-medium">Project Manager</span> <span className="text-gray-500">(June 2022 - June 2023)</span> <span className="text-gray-500"> • Stanford, CA</span></p>
           <p className="text-gray-600">As Project Manager, I led and mentored over 50 student consultants, running weekly training sessions and managing client deliverables. I taught foundational skills in competitive analysis, consumer behavior, market research, and UX strategy. As a Consultant, I worked on projects for companies like Microsoft Xbox crafting go-to-market strategies for a new cloud gaming product and Firstcard Mastercard where I designed a student ambassador program and app features and pitched to the CEO.</p>
         </div>
 
