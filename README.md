@@ -1,3 +1,3 @@
 # Eli's Personal Website
 
-Last updated: Aug 2025
+Last updated: September 2025
