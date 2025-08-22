@@ -105,7 +105,7 @@ export default function Home() {
         <div className="mb-8 p-6 bg-gray-50 rounded-lg border border-gray-100">
           <h3 className="text-xl font-bold text-black mb-1">Bayview Asset Management</h3>
           <p className="text-gray-600 mb-2"> <span className="text-black font-medium">AI Analyst</span> <span className="text-gray-500">(September 2025 - Present)</span> <span className="text-gray-500"> • New York City, NY</span></p>
-          <p className="text-gray-600">Founding member of Bayview’s Enterprise AI team created in Summer 2025. Work across the entire commpany to identify high‑impact pain points and build internal AI solutions to streamline workflows and improve decision speed and quality. Develop and fine‑tune internal models for Bayview‑specific use cases, stand up the supporting infrastructure, and deliver end‑to‑end solutions: from problem discovery and prototype to production rollout.</p>
+          <p className="text-gray-600">Founding member of Bayview’s AI division. Work across the entire company to identify high‑impact pain points and build internal AI solutions to streamline workflows and improve decision speed and quality. Develop and fine‑tune internal models for Bayview‑specific use cases, stand up the supporting infrastructure, and deliver end‑to‑end solutions: from problem discovery and prototype to production rollout.</p>
         </div>
         {/* Research Assistant */}
         <div className="mb-8 p-6 bg-gray-50 rounded-lg border border-gray-100">
