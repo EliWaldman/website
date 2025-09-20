@@ -78,7 +78,7 @@ export default function Home() {
           I&apos;m a storyteller, tinkerer, and computer scientist. I arrived at college with a camera in hand, eager to keep pursuing what I loved most: documentary filmmaking. My first computer science classes at Stanford showed me that code, data, design, and even math could uncover and express people’s stories in ways a camera never could. That realization led me from film to a B.S. in Symbolic Systems and ultimately to a Master&apos;s in Computer Science, where I developed deep technical skills, immersing myself in ML, algorithms, and human-centered AI research while also learning to convey complex technical concepts to both technical and non-technical audiences.
         </p>
         <p className="text-gray-600 mb-4">
-          I currently work at Bayview Asset Management in NYC as a founding member of their Enterprise AI team. I work across the firm to uncover high-leverage use cases and develop and deliver internal AI solutions (hardware and software) that make trading, investing, and operations faster, clearer, and more reliable.
+          I currently work at Bayview Asset Management in NYC as an AI Engineer and founding member of their Enterprise AI team. I work across the firm to uncover high-leverage use cases and develop and deliver internal AI solutions (hardware and software) that make trading, investing, and operations faster, clearer, and more reliable.
         </p>
         <p className="text-gray-600">
           My work centers on blending technical depth with business and design thinking: not just building tools with a clear, user-centered purpose, but creating technology that feels natural and impactful for the people who use it.
@@ -104,7 +104,7 @@ export default function Home() {
         {/* Bayview Asset Management */}
         <div className="mb-8 p-6 bg-gray-50 rounded-lg border border-gray-100">
           <h3 className="text-xl font-bold text-black mb-1">Bayview Asset Management</h3>
-          <p className="text-gray-600 mb-2"> <span className="text-black font-medium">AI Analyst</span> <span className="text-gray-500">(September 2025 - Present)</span> <span className="text-gray-500"> • New York City, NY</span></p>
+              <p className="text-gray-600 mb-2"> <span className="text-black font-medium">AI Engineer</span> <span className="text-gray-500">(September 2025 - Present)</span> <span className="text-gray-500"> • New York City, NY</span></p>
           <p className="text-gray-600">Founding member of Bayview’s AI division. Work across the entire company to identify high‑impact pain points and build internal AI solutions to streamline workflows and improve decision speed and quality. Develop and fine‑tune internal models for Bayview‑specific use cases, stand up the supporting infrastructure, and deliver end‑to‑end solutions: from problem discovery and prototype to production rollout.</p>
         </div>
         {/* Research Assistant */}
